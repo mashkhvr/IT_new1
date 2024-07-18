@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+:root {
+    --main-color: #192641;
+    --font-size-p: 1.2rem;
+    --font-size-h1: 3.2rem;
+    --button-color: #800000;
+    --hover-color: #952929;
+    --button: #218101;
+    --button-color2: linear-gradient(180deg, #800000, #ff4757);
+    --text-color: #302d2d;
+    --text-color2: #ebebeb;
+    --main-color2: #263a66;
+    --secondary-color: #8b9dc3;
+    --light-color: #dfe3ee;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+
+/* Projects */
+#projects {
+    padding: 50px 0;
+    background-color: var(--main-color2);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.project-card p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.technologies {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.technologies li {
+    background: #e2e2e2;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.btn {
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s ease;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
